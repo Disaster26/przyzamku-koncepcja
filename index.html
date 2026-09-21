@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pensjonat Przy Zamku - noclegi w Człuchowie przy Zamku Krzyżackim</title>
+<meta name="description" content="Pensjonat Przy Zamku w Człuchowie: 11 przytulnych pokoi i apartament z widokiem na Zamek Krzyżacki, sala konferencyjno-kominkowa do 25 osób, cisza, jeziora i lasy. ul. Kościelna 4, tel. 59 834 33 49.">
+<meta property="og:title" content="Pensjonat Przy Zamku - Człuchów">
+<meta property="og:description" content="Przytulny pensjonat w cichej okolicy, przy XIII-wiecznych ruinach Zamku Krzyżackiego i w otoczeniu trzech jezior.">
+<meta property="og:image" content="img/pens_front.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bord:#8f1d2c;--bord2:#6e1421;--zloty:#c9a24a;--szary:#4a4a4a;--jasny:#f7f4f0;--linia:#e8e1d9;--tekst:#262626;--ciemny:#1f1a1b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Nunito,system-ui,Segoe UI,Arial,sans-serif;color:var(--tekst);background:#fff;line-height:1.6;font-size:17px}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--bord)}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+.pasek{background:var(--ciemny);color:#d9cfc8;font-size:13px;text-align:center;padding:6px 12px}
+.pasek b{color:#fff}
+.pasek a{color:#fff;text-decoration:none;margin-left:10px}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia);box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 0;position:relative}
+.logo{text-decoration:none;display:flex;align-items:center;gap:12px}
+.logo img{height:56px;width:auto}
+.logo b{display:block;font-family:"Playfair Display",serif;font-size:20px;color:var(--ciemny);line-height:1.1}
+.logo small{display:block;font-size:12px;color:var(--szary);font-weight:600;font-family:Nunito}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:24px}
+nav a{color:var(--szary);text-decoration:none;font-weight:700;font-size:15px}
+nav a:hover{color:var(--bord)}
+.tel{background:var(--bord);color:#fff!important;padding:10px 18px;border-radius:999px;font-weight:800;text-decoration:none;white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+.tel:hover{background:var(--bord2)}
+.burger{display:none;background:none;border:0;font-size:28px;line-height:1;color:var(--szary);cursor:pointer}
+.hero{position:relative;color:#fff;background:#2a1d1f}
+.hero .tlo{position:absolute;inset:0;background:url(img/pens_front.jpg) center/cover;opacity:.55}
+.hero .wrap{position:relative;padding-top:110px;padding-bottom:110px;max-width:820px;text-align:center}
+.hero h1{font-size:50px;line-height:1.1;margin:0 0 16px;text-shadow:0 2px 14px rgba(0,0,0,.5)}
+.hero p{font-size:20px;margin:0 0 28px;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:800;text-decoration:none;font-size:16px}
+.btn-p{background:var(--bord);color:#fff}.btn-p:hover{background:var(--bord2)}
+.btn-s{background:rgba(255,255,255,.14);color:#fff;border:2px solid rgba(255,255,255,.7)}.btn-s:hover{background:rgba(255,255,255,.26)}
+.atuty{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:-40px;position:relative;z-index:2}
+.atut{background:#fff;border:1px solid var(--linia);border-radius:16px;padding:20px 18px;box-shadow:0 10px 30px rgba(0,0,0,.06);text-align:center}
+.atut b{display:block;font-size:22px;color:var(--bord);font-family:"Playfair Display",serif}
+.atut span{color:var(--szary);font-size:14.5px}
+section{padding:64px 0}
+h2{font-size:34px;margin:0 0 10px;color:var(--ciemny);font-weight:700}
+.lead{color:var(--szary);max-width:740px;margin:0 0 34px;font-size:18px}
+.onas{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.onas p{margin:0 0 16px}
+.onas img{border-radius:18px;box-shadow:0 20px 50px rgba(143,29,44,.14)}
+.pokoje{background:var(--jasny)}
+.karty{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.karta{background:#fff;border:1px solid var(--linia);border-radius:18px;overflow:hidden}
+.karta img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.karta .in{padding:20px 22px}
+.karta h3{margin:0 0 6px;font-size:21px;color:var(--bord)}
+.karta p{margin:0 0 10px;color:var(--szary);font-size:15.5px}
+.karta ul{margin:0;padding-left:0;list-style:none;font-size:15px}
+.karta li{margin:5px 0;padding-left:22px;position:relative}
+.karta li:before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:50%;background:var(--zloty)}
+.wypos{margin-top:26px;background:#fff;border:1px solid var(--linia);border-radius:16px;padding:18px 22px;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:15px;color:var(--szary)}
+.wypos span:before{content:"\2713";color:var(--bord);font-weight:800;margin-right:8px}
+.sala{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
+.sala img{border-radius:18px}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.galeria a{border-radius:14px;overflow:hidden;aspect-ratio:4/3;display:block;background:#eee}
+.galeria img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.galeria a:hover img{transform:scale(1.04)}
+.atrakcje{background:var(--jasny)}
+.atr{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.atr div{background:#fff;border:1px solid var(--linia);border-radius:18px;padding:24px}
+.atr h3{margin:0 0 8px;font-size:20px;color:var(--ciemny)}
+.atr p{margin:0;color:var(--szary);font-size:15.5px}
+.kontakt .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.dane{font-size:17px}.dane p{margin:0 0 12px}
+.dane a.big{font-size:24px;font-weight:800;text-decoration:none;display:inline-block}
+.godz{margin-top:18px;padding:16px 18px;background:var(--jasny);border-radius:14px;font-size:15px;color:var(--szary)}
+.mapa{border-radius:18px;overflow:hidden;border:1px solid var(--linia)}
+.mapa iframe{width:100%;height:340px;border:0;display:block}
+.mapa a{display:block;text-align:center;padding:12px;font-weight:700;text-decoration:none;background:#fff}
+footer{background:var(--ciemny);color:#cbbfb8;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer a{color:#fff;text-decoration:none}
+.fab{position:fixed;right:16px;bottom:16px;z-index:60;display:none}
+@media (max-width:900px){
+ .onas,.sala,.kontakt .wrap{grid-template-columns:1fr}
+ .hero h1{font-size:36px}.hero .wrap{padding-top:70px;padding-bottom:80px}
+ .atuty{grid-template-columns:1fr 1fr}.karty{grid-template-columns:1fr}.atr{grid-template-columns:1fr}.galeria{grid-template-columns:repeat(2,1fr)}
+ .onas img{order:-1}.sala img{order:-1}
+ nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--linia)}
+ nav ul.otwarte{display:flex}
+ nav li{border-top:1px solid var(--linia)}nav li a{display:block;padding:14px 20px}
+ .burger{display:block}
+ .nav .tel{display:none}
+ .fab{display:block}
+ section{padding:44px 0}h2{font-size:28px}
+}
+@media (max-width:520px){.atuty{grid-template-columns:1fr 1fr;gap:10px}.atut{padding:14px 10px}.atut b{font-size:18px}}
+</style>
+</head>
+<body>
+<div class="pasek">Pensjonat Przy Zamku · ul. Kościelna 4, 77-300 Człuchów · <b>tel. 59 834 33 49</b> <a href="start_en.html">EN</a> <a href="start_de.html">DE</a> <a href="start_it.html">IT</a></div>
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#"><img src="img/logo2-u1272.png" alt="Pensjonat Przy Zamku"><span><b>Pensjonat Przy Zamku</b><small>Człuchów, przy Zamku Krzyżackim</small></span></a>
+  <nav>
+   <button class="burger" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('otwarte')">&#9776;</button>
+   <ul id="menu">
+    <li><a href="#onas">O nas</a></li>
+    <li><a href="#pokoje">Pokoje</a></li>
+    <li><a href="#sala">Sala kominkowa</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#atrakcje">Atrakcje</a></li>
+    <li><a href="#kontakt">Kontakt</a></li>
+   </ul>
+  </nav>
+  <a class="tel" href="tel:+48598343349">&#9742; 59 834 33 49</a>
+ </div>
+</header>
+
+<section class="hero">
+ <div class="tlo"></div>
+ <div class="wrap">
+  <h1>Nocleg z widokiem na Zamek Krzyżacki</h1>
+  <p>Niewielki, przytulny pensjonat w cichej okolicy Człuchowa: 11 pokoi i apartament, kominek, trzy jeziora w zasięgu spaceru.</p>
+  <div class="cta">
+   <a class="btn btn-p" href="tel:+48598343349">Zadzwoń i zarezerwuj</a>
+   <a class="btn btn-s" href="mailto:pensjonatprzyzamku@op.pl">Napisz e-mail</a>
+  </div>
+ </div>
+</section>
+
+<div class="wrap">
+ <div class="atuty">
+  <div class="atut"><b>11 pokoi</b><span>1-, 2-, 3-osobowe i apartament</span></div>
+  <div class="atut"><b>XIII w.</b><span>ruiny Zamku Krzyżackiego za oknem</span></div>
+  <div class="atut"><b>3 jeziora</b><span>spacer, rower, kajak, wędkowanie</span></div>
+  <div class="atut"><b>25 osób</b><span>sala konferencyjno-kominkowa</span></div>
+ </div>
+</div>
+
+<section id="onas">
+ <div class="wrap onas">
+  <div>
+   <h2>Poczują się Państwo jak w domu</h2>
+   <p>"Pensjonat Przy Zamku" jest niewielkim, ale bardzo przytulnym pensjonatem, położonym w malowniczej, cichej i spokojnej okolicy w pobliżu XIII-wiecznych ruin Zamku Krzyżackiego oraz w otoczeniu trzech jezior.</p>
+   <p>Pokoje utrzymane są w subtelnej tonacji barw, a nowoczesny wystrój ma zapewnić wypoczynek na najwyższym poziomie. Widok z okien to niezapomniane spojrzenie na Zamek Krzyżacki. Ciepło kominka oraz niezwykły nastrój panujący w pensjonacie sprawiają, że nasi goście czują się jak w domu.</p>
+   <p>To idealne miejsce na spokojny wypoczynek, weekend we dwoje, wyjazd rodzinny albo nocleg w podróży służbowej. Serdecznie zapraszamy!</p>
+  </div>
+  <img src="img/p1000272_rtc.jpg" alt="Budynek Pensjonatu Przy Zamku w Człuchowie">
+ </div>
+</section>
+
+<section class="pokoje" id="pokoje">
+ <div class="wrap">
+  <h2>Pokoje</h2>
+  <p class="lead">Łącznie 11 pokoi i apartament, rozmieszczonych na dwóch kondygnacjach. Każdy z łazienką z prysznicem, telewizorem LCD i bezprzewodowym internetem.</p>
+  <div class="karty">
+   <div class="karta"><img src="img/dsc_5947.jpg" alt="Pokój jednoosobowy"><div class="in"><h3>Pokoje 1- i 2-osobowe</h3><p>Dla podróżujących służbowo i par. Cisza, wygodne łóżka, biurko do pracy.</p><ul><li>łazienka z prysznicem</li><li>TV LCD, Wi-Fi</li><li>widok na zamek lub ogród</li></ul></div></div>
+   <div class="karta"><img src="img/dsc_5863.jpg" alt="Pokój trzyosobowy"><div class="in"><h3>Pokoje 3-osobowe</h3><p>Dla rodzin i małych grup. Przestronne, na poddaszu lub piętrze.</p><ul><li>łazienka z prysznicem</li><li>TV LCD, Wi-Fi</li><li>możliwość dostawki dla dziecka</li></ul></div></div>
+   <div class="karta"><img src="img/dsc_5821.jpg" alt="Apartament"><div class="in"><h3>Apartament</h3><p>Sypialnia i część wypoczynkowa z sofą. Najlepszy widok na Zamek Krzyżacki.</p><ul><li>osobna część dzienna</li><li>TV LCD, Wi-Fi</li><li>dla 2-4 osób</li></ul></div></div>
+  </div>
+  <div class="wypos"><span>Bezpłatny parking</span><span>Wi-Fi w całym obiekcie</span><span>Sala z kominkiem</span><span>Śniadania</span><span>Cisza i zieleń</span><span>3 minuty pieszo do zamku</span></div>
+  <p style="margin:22px 0 0;color:var(--szary);font-size:15px">Cennik i dostępność: prosimy o telefon <a href="tel:+48598343349"><b>59 834 33 49</b></a> lub e-mail. Rezerwacja bezpośrednia jest zawsze w najlepszej cenie.</p>
+ </div>
+</section>
+
+<section id="sala">
+ <div class="wrap sala">
+  <img src="img/p1390648.jpg" alt="Sala konferencyjno-kominkowa">
+  <div>
+   <h2>Sala konferencyjno-kominkowa</h2>
+   <p>Do dyspozycji gości oddajemy salę konferencyjno-kominkową dla celów szkoleniowych oraz do organizacji imprez zgodnie z życzeniem klienta. Sala pomieści około 25 osób.</p>
+   <p>Sprawdza się przy szkoleniach firmowych z noclegiem, spotkaniach rodzinnych, kameralnych przyjęciach i kolacjach przy kominku. Układ stołów dopasowujemy do potrzeb.</p>
+   <a class="btn btn-p" href="mailto:pensjonatprzyzamku@op.pl?subject=Zapytanie%20o%20sal%C4%99">Zapytaj o termin</a>
+  </div>
+ </div>
+</section>
+
+<section id="galeria">
+ <div class="wrap">
+  <h2>Galeria</h2>
+  <p class="lead">Pokoje, wnętrza i otoczenie pensjonatu.</p>
+  <div class="galeria">
+   <a href="img/pens_front.jpg"><img src="img/pens_front.jpg" alt="Pensjonat i wieża zamkowa"></a>
+   <a href="img/dsc_5813.jpg"><img src="img/dsc_5813.jpg" alt="Pokój na poddaszu"></a>
+   <a href="img/dsc_5880.jpg"><img src="img/dsc_5880.jpg" alt="Pokój z czerwoną ścianą"></a>
+   <a href="img/dsc_5908.jpg"><img src="img/dsc_5908.jpg" alt="Pokój dwuosobowy"></a>
+   <a href="img/p1010110.jpg"><img src="img/p1010110.jpg" alt="Korytarz i wejście do pokoju"></a>
+   <a href="img/p1390648.jpg"><img src="img/p1390648.jpg" alt="Sala kominkowa"></a>
+   <a href="img/dsc_5821.jpg"><img src="img/dsc_5821.jpg" alt="Część wypoczynkowa apartamentu"></a>
+   <a href="img/p1010124.jpg"><img src="img/p1010124.jpg" alt="Klucz do pokoju"></a>
+  </div>
+ </div>
+</section>
+
+<section class="atrakcje" id="atrakcje">
+ <div class="wrap">
+  <h2>Atrakcje w okolicy</h2>
+  <p class="lead">Człuchów to miejsce dla każdego: spokój dla zwolenników odpoczynku biernego i mnóstwo możliwości dla aktywnych.</p>
+  <div class="atr">
+   <div><h3>Zamek Krzyżacki</h3><p>Wzniesiony około 1365 r., po Malborku najpotężniejszy zamek obronny Krzyżaków. Zachowana wieża z tarasem widokowym, dziedziniec i mury - trzy minuty spacerem od pensjonatu.</p></div>
+   <div><h3>Cztery jeziora</h3><p>Ścieżki leśne wokół człuchowskich jezior, plaże i przystanie. Spływy kajakowe, regaty żeglarskie, wędkowanie, rowery - wszystko w zasięgu spaceru lub krótkiej przejażdżki.</p></div>
+   <div><h3>Lasy i Bory Tucholskie</h3><p>Niezmierzone przestrzenie lasów w mieście i okolicy: raj dla grzybiarzy i miłośników spacerów. Blisko do Chojnic, Pojezierza Drawskiego i Parku Narodowego Bory Tucholskie.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+ <div class="wrap">
+  <div class="dane">
+   <h2>Kontakt i rezerwacja</h2>
+   <p><b>Pensjonat Przy Zamku</b><br>ul. Kościelna 4<br>77-300 Człuchów</p>
+   <p>Tel.: <a class="big" href="tel:+48598343349">59 834 33 49</a></p>
+   <p>Fax: 59 834 55 25</p>
+   <p>E-mail: <a href="mailto:pensjonatprzyzamku@op.pl">pensjonatprzyzamku@op.pl</a></p>
+   <div class="godz"><b>Dojazd:</b> centrum Człuchowa, przy zamku; z drogi krajowej nr 22 i 25. Bezpłatny parking przy pensjonacie. Doba hotelowa i godziny recepcji do potwierdzenia telefonicznie.</div>
+  </div>
+  <div class="mapa">
+   <iframe title="Mapa dojazdu - Pensjonat Przy Zamku, Człuchów" loading="lazy" src="https://www.google.com/maps?q=Ko%C5%9Bcielna+4,+77-300+Cz%C5%82uch%C3%B3w&output=embed"></iframe>
+   <a href="https://www.google.com/maps/search/?api=1&query=Ko%C5%9Bcielna+4,+77-300+Cz%C5%82uch%C3%B3w" target="_blank" rel="noopener">Otwórz w Google Maps</a>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <div>&copy; 2026 Pensjonat Przy Zamku · Człuchów · <a href="cookies_polityka.html">Polityka prywatności i cookies</a></div>
+  <div><a href="tel:+48598343349">59 834 33 49</a> · <a href="mailto:pensjonatprzyzamku@op.pl">pensjonatprzyzamku@op.pl</a> · <a href="https://www.facebook.com/Pensjonat-Przy-Zamku-950551098323911/" rel="noopener">Facebook</a></div>
+ </div>
+</footer>
+<a class="fab tel" href="tel:+48598343349">&#9742; Zadzwoń</a>
+</body>
+</html>
